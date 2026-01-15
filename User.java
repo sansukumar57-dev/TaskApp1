@@ -1,20 +1,23 @@
-package Task;
-
 public class User {
-    private  String userName;
-private Task[] task=new Task[10];
-    public User(String userName){
-        this.userName = userName;
+    private String userName;
+   private Task[] currentUserTask=new Task[10];
+    public User()
+{
+
+}
+    public User(String name)
+    {
+        this.userName = name;
     }
-    public String getUserName(){
+    public String getUserName() {
         return userName;
     }
 
-    public Task[] getTask() {
-        return task;
+    public Task[] getCurrentUserTask() {
+        return currentUserTask;
     }
 
-    public void setTask(Task[] task) {
-        this.task = task;
+    public void setCurrentUserTask(Task[] currentUserTask) {
+        this.currentUserTask = currentUserTask;
     }
 }

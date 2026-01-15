@@ -1,11 +1,14 @@
-package Task;
-
 public class Task {
     private String description;
-    public Task (String description){
-
-        this.description = description;
+private  String status;
+    public Task(){
+        
     }
+    public Task(String description){
+        this.description = description;
+        this.status="TODO";
+    }
+
 
     public String getDescription() {
         return description;
@@ -13,5 +16,13 @@ public class Task {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
