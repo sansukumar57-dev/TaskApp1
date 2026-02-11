@@ -1,12 +1,10 @@
-package Task1;
+package TaskCli;
 
 public class User {
-    private  String name;
-
-Task[] tasks=new Task[5];
+    private String name;
+    private Task[] taskArray=new Task[10];
     public User(String name){
-        this.name = name;
-
+        this.name=name;
     }
     public String getName() {
         return name;
@@ -15,13 +13,11 @@ Task[] tasks=new Task[5];
         this.name = name;
     }
 
-    public Task[] getTasks() {
-        return tasks;
+    public Task[] getTaskArray() {
+        return taskArray;
     }
 
-    public void setTasks(Task[] tasks) {
-        this.tasks = tasks;
+    public void setTaskArray(Task[] taskArray) {
+        this.taskArray = taskArray;
     }
-
-
 }
